@@ -1,0 +1,66 @@
+.slider-container {
+  width: 100vw;
+  height: 490px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.slider {
+  display: flex;
+  width: fit-content;
+  height: 506px;
+  transition: transform 1s ease-in-out; /* Smooth transition */
+  gap: 8px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  width: 16.666%; /* Equal width for each slide (100% / 6 slides) */
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 15px; /* Add border-radius to the slide container */
+  overflow: hidden; /* Ensure overflow is hidden to respect border-radius */
+}
+
+.slide-image {
+  width: 545px;
+  height: 343px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0; /* Rounded top corners of the image */
+}
+
+.text-div {
+  display: flex;
+  flex-direction: column;
+  width: 545px; /* Same width as the image */
+  height: 145px;
+  padding: 0 24px; /* Example border color */
+  background-color: #aab2d7; /* Default background, but will be overridden */
+  border-radius: 0 0 5px 5px; /* Rounded bottom corners of the text container */
+}
+
+.text-content {
+  margin: 0;
+  width: 100%;
+  height: auto; /* Let text height adjust based on content */
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Helvetica, sans-serif;
+  color: #FFFFFF;
+  font-weight: bolder;
+  padding: 10px 0; /* Adjust padding for spacing */
+  margin-top: 20px;
+}
+
+.shop-link {
+  margin-top: 10px; /* Space between text and link */
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: helvetica;
+}

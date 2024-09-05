@@ -1,0 +1,100 @@
+.image-container-wrapper {
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px; /* Gap between each slide */
+    padding: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Box shadow for the entire container */
+    border-radius: 8px; /* Rounded corners for the entire container */
+    background-color: #ffffff; /* Background color */
+  }
+  
+  .image-container-slide {
+    width: 400px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 5px; /* Border radius for each slide */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent shrinking */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+  }
+  
+  .image-container-slide:hover {
+    transform: scale(1.02); /* Slightly scale up the entire slide on hover */
+  }
+  
+  .image-container-images {
+    display: flex;
+    gap: 0;
+    border-radius: 8px 8px 0 0; /* Top corners rounded */
+    overflow: hidden; /* Ensure image fits within rounded corners */
+  }
+  
+  .image-one {
+    width: 400px;
+    height: 267px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transform effect */
+  }
+  
+  /* Image hover effect */
+  .image-one:hover {
+    transform: scale(1.05); /* Slightly scale up the image on hover */
+  }
+  
+  .text-container {
+    width: 400px;
+    height: 143px;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: helvetica;
+    font-size: 14px;
+    border-radius: 0 0 8px 6px; /* Bottom corners rounded */
+  }
+  
+  .inner-text {
+    width: 352px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Gap between text elements */
+    font-size: 12px;
+    font-weight: medium;
+    transition: text-decoration 0.3s ease; /* Smooth text decoration effect */
+  }
+  
+  /* Underline effect on text hover */
+  .inner-text:hover h2,
+  .inner-text:hover h3,
+  .inner-text:hover p {
+    text-decoration: underline; /* Underline text on hover */
+  }
+  
+  .inner-text h2,
+  .inner-text h3,
+  .inner-text p {
+    margin: 0;
+  }
+  
+  .text-black h2, .text-black h3, .text-black p {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .text-white h2, .text-white h3, .text-white p {
+    color: white;
+  }
+  
+  /* Add margin-right to the last slide */
+  .image-container-slide:last-child {
+    margin-right: 10px; /* Margin-right for the last div */
+  }
+  

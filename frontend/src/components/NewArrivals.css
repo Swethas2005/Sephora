@@ -1,0 +1,131 @@
+.chosen-slider-container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 345px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .chosen-slider-wrapper {
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .chosen-slider {
+    display: flex;
+    transition: transform 1s ease; /* Adjust speed of slide transition */
+    gap: 16px; /* Space between slides */
+  }
+  
+  .chosen-slide {
+    display: flex;
+    flex-direction: column;
+    width: 198px;
+    height: 313px;
+    padding: 16px;
+    box-sizing: border-box;
+    flex-shrink: 0; /* Prevent slides from shrinking */
+    background-color: white;
+    position: relative;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; /* Slightly darker box shadow */
+    transition: transform 0.3s ease; /* Scale effect on hover */
+  }
+  
+  .chosen-slide img {
+    width: 166px;
+    height: 166px;
+    border-radius: 8px; /* Rounded corners for images */
+  }
+  
+  .chosen-text-container {
+    width: 166px;
+    height: 115px;
+    padding: 12px 0 0;
+    text-align: left; /* Align text to the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+  }
+  
+  .chosen-title {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 4px 0;
+    font-family: Helvetica, Arial, sans-serif; /* Fallback fonts */
+  }
+  
+  .chosen-description {
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 4px 0;
+    font-family: Helvetica, Arial, sans-serif; /* Fallback fonts */
+  }
+  
+  .chosen-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 0;
+  }
+  
+  .star-rating {
+    display: flex;
+    font-size: 18px;
+    margin-top: 4px;
+    color: black; /* Base color for stars */
+  }
+  
+  .star-rating .filled-star {
+    color: gold; /* Color for filled stars */
+  }
+  
+  .star-rating .empty-star {
+    color: lightgray; /* Color for empty stars */
+  }
+  
+  .views {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    font-weight: 500; /* Medium weight */
+  }
+  
+  .chosen-slide:hover .quicklook-tooltip {
+    display: flex;
+  }
+  
+  .quicklook-tooltip {
+    display: none;
+    position: absolute;
+    width: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center tooltip */
+    padding: 5px 10px;
+    background-color: #444242;
+    color: white;
+    border-radius: 4px;
+    font-family: helvetica;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0; /* Initially hidden */
+    justify-content: center; /* Center text vertically */
+    align-items: center; /* Center text horizontally */
+    text-align: center; /* Center text */
+    transition: opacity 0.3s ease;
+  }
+  
+  .chosen-slide:hover .quicklook-tooltip {
+    opacity: 1; /* Show tooltip on hover */
+  }
+  
+  .chosen-slide:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    
+  }
+  

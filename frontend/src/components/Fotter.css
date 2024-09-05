@@ -1,0 +1,70 @@
+/* Footer container styling */
+.fotter {
+    background-color: black; /* Dark background for the footer */
+    padding: 20px; /* Space around the footer content */
+    color: white; /* Default text color */
+  }
+  
+  /* Flex container for the first section of the footer */
+  #first-fotter {
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly between items */
+    align-items: center; /* Aligns items vertically in the center */
+    flex-wrap: wrap; /* Allows wrapping if there's not enough space */
+  }
+  
+  /* Flex items for each fotter-text section */
+  .fotter-text {
+    display: flex;
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center; /* Center-align items horizontally */
+    margin: 10px; /* Space around each item */
+  }
+  
+  /* Styling for the logos */
+  .fotter-logo {
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    margin-bottom: 5px; /* Space between logo and text */
+  }
+  
+  /* Styling for the text paragraphs within fotter-text */
+  .fotter-text p {
+    color: white; /* White text color */
+    font-size: 14px; /* Adjust font size as needed */
+    font-family: helvetica, sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center-align text */
+  }
+  
+  /* Flex container for the second section of the footer */
+  #fotter-2 {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    flex-wrap: wrap; /* Allows wrapping if there's not enough space */
+  }
+  
+  /* Flex items for each footer-div */
+  .fotter-div-1, .fotter-div-2 {
+    display: flex;
+    flex-direction: column; /* Stack paragraphs vertically */
+    margin: 10px; /* Space around each column */
+    flex: 1; /* Allow columns to grow and shrink as needed */
+  }
+  
+  /* Styling for paragraphs within fotter-div-1 and fotter-div-2 */
+  .fotter-div-1 p, .fotter-div-2 p {
+    color: white; /* White text color */
+    font-size: 14px; /* Adjust font size as needed */
+    font-family: helvetica, sans-serif; /* Font family */
+    margin: 5px 0; /* Space between paragraphs */
+  }
+  
+  /* Add the horizontal line styling */
+  .footer-line {
+    border: 0; /* Remove default border */
+    border-top: 1px solid #666; /* Light gray line */
+    margin: 20px 0; /* Space above and below the line */
+  }
+  
